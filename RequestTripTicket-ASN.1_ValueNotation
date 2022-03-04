@@ -1,0 +1,8 @@
+value TripRequest ::= {
+  startLocation "A1"
+  endLocation "C3"
+  arrivalTime "2020-03-03T19:21:13"
+  vehicleGrossWeight 19.31
+  }
+}
+
