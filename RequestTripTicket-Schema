@@ -1,0 +1,11 @@
+RequestTripTicket DEFINITIONS AUTOMATIC TAGS ::= 
+BEGIN
+  TripRequest ::= SEQUENCE       
+  {
+     startLocation UTF8String (SIZE(1..16)),
+     endLocation UTF8String (SIZE(1..16)),
+     arrivalTime DATE-TIME,
+     vehicleGrossWeight REAL
+  }                                                     
+END
+
