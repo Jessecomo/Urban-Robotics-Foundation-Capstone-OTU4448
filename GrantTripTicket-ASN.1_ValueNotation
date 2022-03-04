@@ -1,0 +1,12 @@
+value TripTicket ::= {
+  startLocation "A1"
+  endLocation "C3"
+  arrivalTime "2020-03-03T19:21:13"
+  path {
+    {segmentName "A1", accessFootMaxSpeed 12, accessFootMaxLength 6, accessFootMaxHeight 8, accessFootMinHeight 4},
+    {segmentName "A2", accessFootMaxSpeed 10, accessFootMaxLength 8, accessFootMaxHeight 8, accessFootMinHeight 3},
+    {segmentName "A3", accessFootMaxSpeed 11, accessFootMaxLength 5, accessFootMaxHeight 6, accessFootMinHeight 2},
+    {segmentName "B3", accessFootMaxSpeed 9, accessFootMaxLength 7, accessFootMaxHeight 5, accessFootMinHeight 2},
+    {segmentName "C3", accessFootMaxSpeed 7, accessFootMaxLength 3, accessFootMaxHeight 7, accessFootMinHeight 3}
+  }
+}
