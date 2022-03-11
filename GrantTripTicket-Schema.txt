@@ -3,10 +3,14 @@ BEGIN
   PathSegment ::= SEQUENCE
   {
      segmentName UTF8String (SIZE(1..16)),
+     referenceID UTF8String (SIZE(1..64)),
+     geometryID UTF8String (SIZE(1..64)),
      accessFootMaxSpeed INTEGER,
      accessFootMaxLength INTEGER,
      accessFootMaxHeight INTEGER,
-     accessFootMinHeight INTEGER
+     accessFootMinHeight INTEGER,
+     isCrosswalkSegment BOOLEAN,
+     connectedSegments SEQUENCE OF PathSegment
   }
 
 
