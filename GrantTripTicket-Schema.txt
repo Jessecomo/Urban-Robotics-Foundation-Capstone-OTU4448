@@ -8,17 +8,24 @@ BEGIN
      accessFootMaxSpeed INTEGER,
      accessFootMaxLength INTEGER,
      accessFootMaxHeight INTEGER,
-     accessFootMinHeight INTEGER,
-     isCrosswalkSegment BOOLEAN,
-     connectedSegments SEQUENCE OF PathSegment
+     accessFootMinHeight INTEGER
   }
 
+  Sidewalk ::= SEQUENCE
+  {
+     segmentName UTF8String (SIZE(1..16)),
+     referenceID UTF8String (SIZE(1..64)),
+     geometryID UTF8String (SIZE(1..64)),
+     segmentName2 UTF8String (SIZE(1..16)),
+     referenceID2 UTF8String (SIZE(1..64)),
+     geometryID2 UTF8String (SIZE(1..64))
+  }
 
   TripTicket ::= SEQUENCE       
   {
      startLocation UTF8String (SIZE(1..16)),
      endLocation UTF8String (SIZE(1..16)),
      arrivalTime DATE-TIME,
-     path SEQUENCE OF PathSegment
+     path SEQUENCE OF ANY
   }                                                     
 END
