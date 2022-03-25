@@ -2,7 +2,7 @@ GrantTripTicket DEFINITIONS AUTOMATIC TAGS ::=
 BEGIN
   PathSegment ::= SEQUENCE
   {
-     isCrosswalkSegment BOOLEAN,
+     isCrosswalkSegment UTF8String (SIZE(1..16)),
      segmentName UTF8String (SIZE(1..16)),
      referenceID UTF8String (SIZE(1..64)),
      geometryID UTF8String (SIZE(1..64)),
@@ -11,7 +11,7 @@ BEGIN
      accessFootMaxHeight INTEGER,
      accessFootMinHeight INTEGER,
      endSegmentName UTF8String (SIZE(1..16)) OPTIONAL,
-     endFeferenceID UTF8String (SIZE(1..64)) OPTIONAL,
+     endReferenceID UTF8String (SIZE(1..64)) OPTIONAL,
      endGeometryID UTF8String (SIZE(1..64)) OPTIONAL
   }
 
