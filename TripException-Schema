@@ -1,8 +1,8 @@
 TripException DEFINITIONS AUTOMATIC TAGS ::=
 BEGIN
 ExceptionType ::= CHOICE{
-        TicketRejected BOOLEAN,
-        TicketCompleted BOOLEAN
+        ticketRejected BOOLEAN,
+        ticketCompleted BOOLEAN
 }
 
 ExceptionOptions ::= CHOICE{
@@ -11,7 +11,7 @@ ExceptionOptions ::= CHOICE{
         endLocation UTF8String (SIZE(1..16)),
         arrivalTime DATE-TIME,
         },
-        TicketFailToProvide UTF8String (SIZE(1..16)),
-        TicketFailToExecute UTF8String (SIZE(1..16))
+        provideFailure UTF8String (SIZE(1..16)),
+        executeFailure UTF8String (SIZE(1..16))
 }
 END
