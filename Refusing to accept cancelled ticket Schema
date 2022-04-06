@@ -12,3 +12,8 @@ ExceptionOptions ::= CHOICE{
 
 }
 END
+
+--Comments--
+--if currentTime - startTime > cancelTime -> executeFailure else -> cancelTicket--
+--This code is for if the robot is requested to cancel a current trip ticket and has to 
+decide whether or not it must cancel it or refuse to cancel it.-- 
