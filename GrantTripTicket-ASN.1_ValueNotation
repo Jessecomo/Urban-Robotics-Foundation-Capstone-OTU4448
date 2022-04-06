@@ -3,8 +3,11 @@ value TripTicket ::= {
   endLocation "C3"
   arrivalTime "2020-03-03T19:21:13"
   path {
-    {isCrosswalkSegment "FALSE", segmentName "A1", referenceID "123", geometryID "456", accessFootMaxSpeed 12, accessFootMaxLength 6, accessFootMaxHeight 8,         accessFootMinHeight 4},
-    {isCrosswalkSegment "TRUE", segmentName "A1-A2", referenceID "512", geometryID "634", accessFootMaxSpeed 10, accessFootMaxLength 4, accessFootMaxHeight 7,       accessFootMinHeight 5, endSegmentName "A2", endReferenceID "151", endGeometryID "552"},
-    {isCrosswalkSegment "FALSE", segmentName "AA2", referenceID "151", geometryID "552", accessFootMaxSpeed 10, accessFootMaxLength 4, accessFootMaxHeight 7,       accessFootMinHeight 5}
+    {isCrosswalkSegment "FALSE", segmentName "A1", referenceID "123", geometryID "456", accessFootMaxSpeed 12, accessFootMaxLength 6, 
+    accessFootMaxHeight 8, accessFootMinHeight 4},
+    {isCrosswalkSegment "TRUE", segmentName "A1-A2", referenceID "512", geometryID "634", accessFootMaxSpeed 10, accessFootMaxLength 4,
+    accessFootMaxHeight 7, accessFootMinHeight 5, endSegmentName "A2", endReferenceID "151", endGeometryID "552"},
+    {isCrosswalkSegment "FALSE", segmentName "AA2", referenceID "151", geometryID "552", accessFootMaxSpeed 10, accessFootMaxLength 4, 
+    accessFootMaxHeight 7, accessFootMinHeight 5}
   }
 }
