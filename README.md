@@ -5,4 +5,4 @@ Request and grant of a trip ticket that will allow for multiple fleets of indepe
 
 **UML Diagram**
 
-![UML Diagram Draft V2 (2)](https://user-images.githubusercontent.com/46917483/161314769-14bf2477-2d30-4635-ad5c-333ddeefad20.jpg)
+![UML Diagram V3_Latest](https://user-images.githubusercontent.com/100879429/162078790-236fadb7-9af3-48b7-9517-137a6faef253.png)
