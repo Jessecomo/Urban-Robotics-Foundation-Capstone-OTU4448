@@ -1,0 +1,9 @@
+value CancelCheck::= {
+  startTime "10:30:23"
+  cancelTime "5"
+  currentTime "10:36:15"
+  }
+}
+
+--Comments--
+--Since currentTime - startTime > cancelTime, robot would executeFailure and refuse to cancel the ticket--
