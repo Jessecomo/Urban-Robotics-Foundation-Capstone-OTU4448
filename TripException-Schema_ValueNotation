@@ -5,7 +5,7 @@ value ExceptionType::= {
   vehicleGrossWeight 19.31
   provideFailure "Ticket was Cancelled"
   executeFailure "Return to Start"
-  execute { ticketRejected "TRUE", ticketCompleted "True" }
+  execute { ticketRejected "TRUE", ticketCompleted "FALSE" }
 
   }
 }
