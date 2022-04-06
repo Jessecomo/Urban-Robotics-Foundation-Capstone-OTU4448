@@ -3,7 +3,7 @@ BEGIN
   CancelCheck ::= SEQUENCE
   {
      startTime TIME-OF-DAY,
-     cancelTime TIME-OF-DAY,
+     cancelTime REAL,
      currentTime TIME-OF-DAY
   }                                                    
 ExceptionOptions ::= CHOICE{
