@@ -1,0 +1,14 @@
+CancelTripTicket DEFINITIONS AUTOMATIC TAGS ::= 
+BEGIN
+  CancelCheck ::= SEQUENCE
+  {
+     startTime TIME-OF-DAY,
+     cancelTime TIME-OF-DAY,
+     currentTime TIME-OF-DAY
+  }                                                    
+ExceptionOptions ::= CHOICE{
+        executeFailure UTF8String (SIZE(1..16)),
+        cancelTicket UTF8String (SIZE(1..16))
+
+}
+END
